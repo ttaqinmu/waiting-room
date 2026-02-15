@@ -1,0 +1,10 @@
+name = "waiting-room"
+main = "build/index.js"
+compatibility_date = "2025-12-19"
+
+[build]
+command = "cargo install -q worker-build@^0.7 && worker-build --release"
+
+[vars]
+SAFETY_FACTOR = 0.7
+TOKEN_DURATION = 1800
